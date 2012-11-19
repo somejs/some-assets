@@ -1,0 +1,38 @@
+{
+  "name": "some-assets",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "resources model",
+  "keywords": [
+    "some", "assets", "resources", "components",
+    "make", "build"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freaking-awesome/some-assets.git"
+  },
+  "author": {
+    "name": "Teh Freak",
+    "email": "tehfreak@github.com"
+  },
+  "main": "./lib/Assets",
+  "bin": {
+    "some-assets": "./bin/assets"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "dependencies": {
+    "coa": "latest",
+    "async": "latest",
+    "some-fs": "https://github.com/freaking-awesome/some-fs/archive/master.tar.gz",
+    "less": "latest"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*"
+  },
+  "engines": {
+    "node": ">=0.6"
+  }
+}
