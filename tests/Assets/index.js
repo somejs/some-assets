@@ -49,6 +49,16 @@ module.exports= function (Assets) {
                         )
                     })
                 })
+                describe('Css tech instance', function () {
+                    it('has .make method', function () {
+                        assert.isFunction(
+                            Assets.Css('assets/css/', {}).make
+                        )
+                        assert.isFunction(
+                            Assets.Css('assets/css/style.css', {}).make
+                        )
+                    })
+                })
             })
         })
 
@@ -85,6 +95,16 @@ module.exports= function (Assets) {
                             Assets.Js('assets/js/script.js', {}), Assets.Js.File
                         )
                     })
+                })
+            })
+            describe('Js tech instance', function () {
+                it('has .make method', function () {
+                    assert.isFunction(
+                        Assets.Js('assets/js/', {}).make
+                    )
+                    assert.isFunction(
+                        Assets.Js('assets/js/script.js', {}).make
+                    )
                 })
             })
         })
