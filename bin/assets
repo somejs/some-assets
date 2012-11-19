@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-require('../lib/assets.js').run(
+require('../lib/bin/assets.js').run(
     process.argv.slice(2)
 )
