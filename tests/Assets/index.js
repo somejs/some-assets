@@ -62,6 +62,31 @@ module.exports= function (Assets) {
             })
         })
 
+        it('exports Img tech', function () {
+            assert.isFunction(
+                Assets.Img
+            )
+            describe('Img tech', function () {
+                it('exports Folder model', function () {
+                    assert.isFunction(
+                        Assets.Img.Folder
+                    )
+                })
+            })
+            describe('Img tech constructor', function () {
+                describe('Img tech constructor for path', function () {
+                    it('return Assets.Img.Folder instance', function () {
+                        assert.instanceOf(
+                            Assets.Img('assets/i/', {}), Assets.Img.Folder
+                        )
+                        assert.instanceOf(
+                            Assets.Img('assets/i', {}), Assets.Img.Folder
+                        )
+                    })
+                })
+            })
+        })
+
         it('exports Js tech', function () {
             assert.isFunction(
                 Assets.Js
